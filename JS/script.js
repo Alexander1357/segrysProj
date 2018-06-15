@@ -8,7 +8,7 @@ function fromSysToSys(){
             var str;
             document.getElementById('ans').innerHTML = "";
             
-            if (r1 != 10){
+            /*if (r1 != 10){
                         n.split("").reverse();
                         for (var i = 0; i < n.length; i++){
                                     for (var j = 0; j < alph.length; j++){
@@ -35,7 +35,7 @@ function fromSysToSys(){
                 }
                 else
                     str = Math.round(str);
-            }
+            }*/
             
             document.getElementById('ans').innerHTML += n.split("").reverse().join("");
 }
