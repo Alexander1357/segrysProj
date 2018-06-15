@@ -5,7 +5,7 @@ function fromSys1ToSys2(){
             var n = document.getElementById('key').value;
             var r1 = +document.getElementById('sys1').value;
             var r2 = +document.getElementById('sys2').value;
-            var str = "";
+            var str;
             document.getElementById('ans').innerHTML = "";
             
             if (r1 != 10){
