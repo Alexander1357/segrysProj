@@ -37,5 +37,5 @@ function fromSys1ToSys2(){
                     str = Math.round(str);
             }
             
-            document.getElementById('ans').innerHTML += str.split("").reverse().join("");
+            document.getElementById('ans').innerHTML = n.split("").reverse().join("");
 }
