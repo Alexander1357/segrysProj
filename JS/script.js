@@ -39,5 +39,5 @@ function fromSysToSys(){
                     str = Math.round(str);
             }
             
-            document.getElementById('ans').innerHTML += `${input} <sub>${String(r1)}</sub> = ${ans.split("").reverse().join("")}<sub>${String(r2)}</sub>`;
+            document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split("").reverse().join("")}<sub>${String(r2)}</sub>`;
 }
