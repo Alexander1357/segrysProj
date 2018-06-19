@@ -23,6 +23,10 @@ function fromSysToSys(){
                         }
                         
                         for (var i = 0; i < n.length; i++){
+                                    n[i] = parseInt(n[i], 10);
+                        }  
+                        
+                        for (var i = 0; i < n.length; i++){
                                     str += parseInt(n[i], 10) * Math.pow(r1, i);
                         }  
             }
