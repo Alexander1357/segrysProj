@@ -27,7 +27,7 @@ function fromSysToSys(){
                         }  
                         
                         for (var i = 0; i < n.length; i++){
-                                    str += parseInt(n[i], 10) * Math.pow(r1, i);
+                                    str += n[i] * Math.pow(r1, i);
                         }  
             }
             
