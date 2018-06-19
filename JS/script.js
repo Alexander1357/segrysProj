@@ -23,7 +23,7 @@ function fromSysToSys(){
             } 
             
             for(let i = 0; i < n.length; i++){
-                        if(n[i] >= r1){
+                        if(n[i] >= r1 || +input < 0){
                                    str = -1;
                            }
             }
