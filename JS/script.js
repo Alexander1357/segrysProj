@@ -13,20 +13,17 @@ function fromSysToSys(){
             
             if (r1 != 10){
                         n = input.split("").reverse();
-                        for (var i = 0; i < n.length; i++){J
+                        for (var i = 0; i < n.length; i++){
                                     for (var j = 0; j < alph.length; j++){
                                                 if (n[i] == alph[j]){
                                                             n[i] = j;
                                                             j = alph.length;
                                                 }
                                     }
-                        }
+                        } 
                         
                         for (var i = 0; i < n.length; i++){
                                     n[i] = parseInt(n[i], 10);
-                        }  
-                        
-                        for (var i = 0; i < n.length; i++){
                                     str += n[i] * Math.pow(r1, i);
                         }  
             }
