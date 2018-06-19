@@ -23,15 +23,18 @@ function fromSysToSys () {
                         }
             } 
             
+            for (let i = 0; i < n.length; i++){
+                                    n[i] = parseInt(n[i], 10);
+            }
+            
             for(let i = 0; i < n.length; i++){
-                        if(n[i] >= r1 || parseInt(n.join(''), 10) < 0){
+                        if(n[i] >= r1 || n[i] < 0){
                                    str = -1;
                            }
             }
             if(str != -1){
                         
                         for (let i = 0; i < n.length; i++){
-                                    n[i] = parseInt(n[i], 10);
                                     str += n[i] * Math.pow(r1, i);
                         }  
                         
