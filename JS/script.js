@@ -20,6 +20,7 @@ function fromSysToSys () {
                                                 n[i] = j;
                                                 j = alph.length;
                                     }
+                                   
                         }
             } 
             
