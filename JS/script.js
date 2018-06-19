@@ -11,8 +11,15 @@ function fromSysToSys(){
             let ans = "";
             document.getElementById('ans').innerHTML = "";
             
-            if (r1 != 10){
-                        n = input.split("").reverse();
+            n = input.split("").reverse();
+            
+            for(let i = 0; i < n.length; i++){
+                        if(n[i] >= r1){
+                                   r1 = -1;
+                           }
+            }
+            
+            if (r1 != -1){
                         for (let i = 0; i < n.length; i++){
                                     for (let j = 0; j < alph.length; j++){
                                                 if (n[i] == alph[j]){
@@ -26,18 +33,22 @@ function fromSysToSys(){
                                     n[i] = parseInt(n[i], 10);
                                     str += n[i] * Math.pow(r1, i);
                         }  
+            
+                        while (str > 0) {
+                            ans += alph[str % r2];
+                            str = str / r2;
+                            if (str < Math.round(str)) {
+                                str = Math.round(str);
+                                str--;
+                            }
+                            else
+                                str = Math.round(str);
+                        }
+                        document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split("").reverse().join("")}<sub>${String(r2)}</sub>`;
+            }
+            else if(r1 == -1){
+                        document.getElementById('ans').innerHTML += "Указанное число содержит недопустимые для исходной системы счисления символы. Например, для двоичной системы счисления допустимыми символами являются числа только от 0 до 1, а для шестнадцатеричной 0—9 и A—F.";
             }
             
-            while (str > 0) {
-                ans += alph[str % r2];
-                str = str / r2;
-                if (str < Math.round(str)) {
-                    str = Math.round(str);
-                    str--;
-                }
-                else
-                    str = Math.round(str);
-            }
             
-            document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split("").reverse().join("")}<sub>${String(r2)}</sub>`;
 }
