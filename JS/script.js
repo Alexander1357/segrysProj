@@ -13,27 +13,27 @@ function fromSysToSys(){
             
             n = input.split("").reverse();
             
+            for (let i = 0; i < n.length; i++){
+                        for (let j = 0; j < alph.length; j++){
+                                    if (n[i] == alph[j]){
+                                                n[i] = j;
+                                                j = alph.length;
+                                    }
+                        }
+            } 
+            
             for(let i = 0; i < n.length; i++){
                         if(n[i] >= r1){
-                                   r1 = -1;
+                                   str = -1;
                            }
             }
-            
-            if (r1 != -1){
-                        for (let i = 0; i < n.length; i++){
-                                    for (let j = 0; j < alph.length; j++){
-                                                if (n[i] == alph[j]){
-                                                            n[i] = j;
-                                                            j = alph.length;
-                                                }
-                                    }
-                        } 
+            if(str != -1){
                         
                         for (let i = 0; i < n.length; i++){
                                     n[i] = parseInt(n[i], 10);
                                     str += n[i] * Math.pow(r1, i);
                         }  
-            
+                        
                         while (str > 0) {
                             ans += alph[str % r2];
                             str = str / r2;
