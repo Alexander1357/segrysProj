@@ -47,7 +47,9 @@ function fromSysToSys () {
                             else
                                 str = Math.round(str);
                         }
-                        document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
+                        if(input != null || r1 != null || r2 != null){
+                            document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
+                        }
             }
             else {
                     document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые для исходной системы счисления символы. Например, для двоичной системы счисления допустимыми символами являются числа только от 0 до 1, а для шестнадцатеричной 0—9 и A—F.';
