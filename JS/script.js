@@ -47,7 +47,7 @@ function fromSysToSys () {
                             else
                                 str = Math.round(str);
                         }
-                        if(input != null || r1 != null || r2 != null){
+                        if(input != 0 || r1 != 0 || r2 != 0){
                             document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
                         }
             }
