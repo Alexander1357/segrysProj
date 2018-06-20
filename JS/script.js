@@ -26,7 +26,7 @@ function fromSysToSys () {
             
             for(let i = 0; i < n.length; i++){
                         n[i] = parseInt(n[i], 10);
-                        if(n[i] >= r1){
+                        if(n[i] >= r1 || isNaN(n[i])){
                                    str = -1;
                            }
             }
