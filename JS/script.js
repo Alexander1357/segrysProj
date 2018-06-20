@@ -25,6 +25,7 @@ function fromSysToSys () {
             } 
             
             for(let i = 0; i < n.length; i++){
+                        n[i] = parseInt(n[i], 10);
                         if(n[i] >= r1){
                                    str = -1;
                            }
@@ -33,7 +34,6 @@ function fromSysToSys () {
             if(str != -1){
                         
                         for (let i = 0; i < n.length; i++){
-                                    n[i] = parseInt(n[i], 10);
                                     str += n[i] * Math.pow(r1, i);
                         }  
                         
