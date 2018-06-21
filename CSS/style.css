@@ -1,0 +1,30 @@
+        body {background-color: skyblue}
+        input{height: 25px; font-size: 25px; width: 35%;}
+        .pan {
+
+            width: 425px;
+            display: inline-block;
+            height: 400px;
+            
+            text-align: left;
+            font-family: Impact;
+            font-size: 30px;
+        }
+    
+        .p1 {
+            text-align: left;s
+            
+        }
+        #sys1 {
+            width: 45px;
+        }
+        #sys2 {
+            width: 45px;
+        }
+        #ans {
+            text-align: center;
+        }
+        #send{
+            text-align: center;
+            font-family: Impact;
+        }
