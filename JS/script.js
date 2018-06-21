@@ -18,6 +18,7 @@ function fromSysToSys () {
                         for (let j = 0; j < alph.length; j++){
                                     if (n[i] == alph[j]){
                                                 n[i] = j;
+                                                n[i] = parseInt(n[i], 10);
                                                 j = alph.length;
                                     }
                                    
@@ -25,7 +26,6 @@ function fromSysToSys () {
             } 
             
             for(let i = 0; i < n.length; i++){
-                        n[i] = parseInt(n[i], 10);
                         if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2)){
                                    str = -1;
                            }
