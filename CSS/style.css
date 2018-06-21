@@ -25,6 +25,8 @@
             text-align: center;
         }
         #send{
-            text-align: center;
+            height: 12%;
+            width: 40%;
+            font-size: 25px;
             font-family: Impact;
         }
