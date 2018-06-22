@@ -5,19 +5,19 @@ function fromSysToSys () {
                           "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
                           "S", "T", "U", "V", "W", "X", "Y", "Z"];
             
-            const r1 = +document.getElementById('sys1').value;
-            const r2 = +document.getElementById('sys2').value;
-            let input = document.getElementById('key').value;
-            let str = 0;
-            let ans = "";
-            document.getElementById('ans').innerHTML = '';
+            const r1 = +document.getElementById('sys1').value;    //исходной система счисления
+            const r2 = +document.getElementById('sys2').value;    //система счисления, в которую надо перевести число
+            let input = document.getElementById('key').value;    //исходное число
+            let str = 0;    //вспомогательная переменная
+            let ans = "";    //переменная, в которую будет записан ответ
+            document.getElementById('ans').innerHTML = '';    //чистим строку с ответом
             
-            n = input.split('').reverse();
+            n = input.split('').reverse();    //обЪявляем переменную, в которую записывается перевёрнутое число в виде массива
             
-            for (let i = 0; i < n.length; i++){
+            for (let i = 0; i < n.length; i++){    //прогоняем массив через два цикла, чтобы заменить буквы на цифры
                         for (let j = 0; j < alph.length; j++){
-                                    if (n[i] == alph[j]){
-                                                n[i] = j;
+                                    if (n[i] == alph[j]){    //запускается проверка, в которой в исходном числе строки меняются на числа
+                                                n[i] = j;    //меняем 
                                                 n[i] = parseInt(n[i], 10);
                                                 j = alph.length;
                                     }
@@ -25,34 +25,41 @@ function fromSysToSys () {
                         }
             } 
             
-            for(let i = 0; i < n.length; i++){
-                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2)){
-                                   str = -1;
+            for(let i = 0; i < n.length; i++){    //прогоняем результат через цикл, чтобы проверить правильность ввода
+                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || input != 0 || r1 != 0 || r2 != 0){    //проверяем правильность ввода данных
+                                   str = -1;    //если что-то введено неправильно, то вспомогательная переменная меняется на -1, пропускается выполнение окончательного перевода 
                            }
             }
             
-            if(str != -1){
+            if(str != -1){    //если ошибок нет
                         
-                        for (let i = 0; i < n.length; i++){
-                                    str += n[i] * Math.pow(r1, i);
+                        //Перевод в десятичную систему счисления
+                        
+                        for (let i = 0; i < n.length; i++){    //прогоняем массив через цикл, чтобы получить перевод исходного числа в десятичную систему счисления
+                                    str += n[i] * Math.pow(r1, i);    //перевод исходного числа в десятичную систему счисления
                         }  
                         
-                        while (str > 0) {
-                            ans += alph[str % r2];
-                            str = str / r2;
-                            if (str < Math.round(str)) {
-                                str = Math.round(str);
+                        //Перевод из десятичной системы счисления в нужную
+                        
+                        while (str > 0) {    //запускаем цикл перевода
+                            ans += alph[str % r2];    //остаток от деления записываем в ответ
+                            str = str / r2;    //делим число на нужную систему счисления
+                                    
+                            //Округляем результат
+                                    
+                            if (str < Math.round(str)) {    //тут нам нужно получить целое число, значение которого не зависит от дробной части
+                                str = Math.round(str);    //т.е. если число равно 52.6, то мы должны получить 52, а не 53, как это делает функция
                                 str--;
                             }
                             else
                                 str = Math.round(str);
                         }
-                        if(input != 0 || r1 != 0 || r2 != 0){
-                            document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
-                        }
+                        
+                        //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
+                        document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
             }
-            else {
-                    document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые для исходной системы счисления символы. Например, для двоичной системы счисления допустимыми символами являются числа только от 0 до 1, а для шестнадцатеричной 0—9 и A—F.';
+            else {    //если массив не прошёл проверку, выводим сообщение об ошибке
+                    document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
             }
             
             
