@@ -68,7 +68,7 @@ function fromSysToSys () {
                                     document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
                         }
                         else{
-                                    document.getElementById('ans').innerHTML += 'Обязательное поле не заполнено.';
+                                    document.getElementById('ans').innerHTML += 'Обязательное поле не заполнено!';
                         }
             }
             else {    //если массив не прошёл проверку, выводим сообщение об ошибке
