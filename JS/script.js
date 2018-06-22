@@ -19,7 +19,7 @@ function fromSysToSys () {
                                     if (n[i] == alph[j]){    //запускается проверка, в которой в исходном числе строки меняются на числа
                                                 n[i] = j;    //меняем 
                                                 n[i] = parseInt(n[i], 10);
-                                                j = alph.length;
+                                                j = alph.length + 1;
                                     }
                                    
                         }
@@ -64,7 +64,8 @@ function fromSysToSys () {
                         }
                         for(let i = 0; i < n.length; i++){    
                                 if(n[i] >= r1){  
-                                        document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
+                                            document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
+                                            i = n.length + 1;
                                 }
                         }
             }    
