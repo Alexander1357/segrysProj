@@ -34,7 +34,7 @@ function fromSysToSys () {
             } 
             
             for(let i = 0; i < n.length; i++){    //прогоняем результат через цикл, чтобы проверить правильность ввода
-                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || parseInt(input, 10) == 0 || r1 == 0 || r2 == 0 || r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){    //проверяем правильность ввода данных
+                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){    //проверяем правильность ввода данных
                                    str = -1;    //если что-то введено неправильно, то вспомогательная переменная меняется на -1, пропускается выполнения перевода 
                            }
             }
@@ -64,7 +64,7 @@ function fromSysToSys () {
                         }
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
-                        if (r1 != 0 || r2 != 0 || input != ' '){
+                        if (r1 != 0 || r2 != 0 || parseInt(input, 10) != 0){
                                     document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
                         }
                         else{
