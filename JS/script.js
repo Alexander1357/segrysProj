@@ -29,9 +29,10 @@ function fromSysToSys () {
                                                 n[i] = parseInt(n[i], 10);
                                                 j = alph.length + 1;
                                     }
-                                   
                         }
-            } 
+            }
+            
+            
             
             for(let i = 0; i < n.length; i++){    //прогоняем результат через цикл, чтобы проверить правильность ввода
                         if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36 || n.length > 25){    //проверяем правильность ввода данных
