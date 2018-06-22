@@ -70,6 +70,9 @@ function fromSysToSys () {
                         if (r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){
                                     document.getElementById('ans').innerHTML += 'Основание системы счисления не может быть меньше 2 или больше 36. Проверьте правильность введённых данных!';
                         }
+                        if (r1 == 0 || r2 == 0 || input == ''){
+                                    document.getElementById('ans').innerHTML += 'Обязательное поле не заполнено.';
+                        }
                         for(let i = 0; i < n.length; i++){    
                                 if(n[i] >= r1){  
                                             document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
