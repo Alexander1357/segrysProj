@@ -2,7 +2,8 @@ function cleanUp () {
             
             document.getElementById('sys1').value = '';    
             document.getElementById('sys2').value = '';    
-            document.getElementById('key').value = '';    
+            document.getElementById('key').value = '';   
+            document.getElementById('ans').innerHTML = ''; 
 }
 
 
@@ -33,7 +34,7 @@ function fromSysToSys () {
             } 
             
             for(let i = 0; i < n.length; i++){    //прогоняем результат через цикл, чтобы проверить правильность ввода
-                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || input == 0 || r1 == 0 || r2 == 0 || r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){    //проверяем правильность ввода данных
+                        if(n[i] >= r1 || isNaN(n[i]) || isNaN(r1) || isNaN(r2) || input == null || r1 == null || r2 == null || r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){    //проверяем правильность ввода данных
                                    str = -1;    //если что-то введено неправильно, то вспомогательная переменная меняется на -1, пропускается выполнения перевода 
                            }
             }
