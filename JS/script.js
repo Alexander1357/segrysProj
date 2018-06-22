@@ -59,7 +59,10 @@ function fromSysToSys () {
                         document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
             }
             else {    //если массив не прошёл проверку, выводим сообщение об ошибке
-                    document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
+                        if(r1 < 2 || r1 > 36 || r2 < 2 || r2 > 36){
+                                    document.getElementById('ans').innerHTML += 'Основание системы счисления не может быть меньше 2 или больше 36. Проверьте правильность введённых данных!';
+                        }
+                        document.getElementById('ans').innerHTML += 'Указанное число содержит недопустимые символы. Проверьте правильность введённых данных!';
             }
             
             
