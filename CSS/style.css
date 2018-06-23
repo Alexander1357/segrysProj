@@ -5,7 +5,8 @@
                 font-size: 25px;
                 width: 35%;
                 border: 0px;
-                border-bottom: 2px solid blue;
+                background-color: #ff000000;
+                border-bottom: 2px solid black;
         }
         .pan {
             width: 425px;
