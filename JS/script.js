@@ -63,7 +63,7 @@ function fromSysToSys () {
                             str = Math.floor(str / r2);    //делим число на нужную систему счисления   
                         }
                         
-                        if (h != Math.floor(h)){
+                        /*if (h != Math.floor(h)){
                                     let fl =  h - Math.floor(h);
                                     ans += '.';
                                     while (Math.floor(f1) != r2){
@@ -71,7 +71,7 @@ function fromSysToSys () {
                                                 ans += Math.floor(f1);
                                                 f1 -= Math.floor(f1); 
                                     }
-                        }
+                        }*/
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
                         if (r1 != 0 && r2 != 0 && parseInt(input, 10) != 0){
