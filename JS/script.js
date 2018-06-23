@@ -18,7 +18,7 @@ function fromSysToSys () {
             let input = document.getElementById('key').value;    //исходное число
             let str = 0;    //вспомогательная переменная
             let ans = "";    //переменная, в которую будет записан ответ
-            let x;
+            let x = 0;
             document.getElementById('ans').innerHTML = '';    //чистим строку с ответом
             
             n = input.split('').reverse();    //обЪявляем переменную, в которую записывается массив из цифр исходного числа и переворачивается
