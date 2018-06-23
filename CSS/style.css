@@ -1,43 +1,43 @@
-        body {background-color: #f9f9f9}
-        p {
-            text-align: left;
-        }
-        h1{
-            text-align: center;
-            font-family: Candara;
-            font-size: 40px;
-        }
-        input{
-                outline: none;
-                height: 25px; 
-                font-size: 25px;
-                width: 35%;
-                border: 0px;
-                background-color: #ff000000;
-                border-bottom: 2px solid black;
-        }
-        .pan {
-            width: 425px;
-            display: inline-block;
-            height: 400px;
-            text-align: left;
-            font-family: Candara;
-            font-size: 30px;
-        }
-        #sys1 {
-            width: 45px;
-        }
-        #sys2 {
-            width: 45px;
-        }
-        #ans {
-                font-family: Candara;
-                text-align: center;
-                font-size: 35px;
-        }
-        #send{
-            height: 12%;
-            width: 40%;
-            font-size: 25px;
-            font-family: Candara;
-        }
+body {background-color: #f9f9f9}
+.p1 {
+    text-align: left;
+}
+input{
+        outline: none;
+        height: 25px; 
+        font-size: 25px;
+        width: 35%;
+        border: 0px;
+        background-color: #ff000000;
+        border-bottom: 2px solid black;
+}
+#h1{
+    text-align: center;
+    font-family: Candara;
+    font-size: 40px;
+}
+.pan {
+    width: 425px;
+    display: inline-block;
+    height: 400px;
+    text-align: left;
+    font-family: Candara;
+    font-size: 30px;
+}
+#sys1 {
+    width: 45px;
+}
+#sys2 {
+    width: 45px;
+}
+#ans {
+        font-family: Candara;
+        text-align: center;
+        font-size: 35px;
+}
+#send{
+    height: 12%;
+    width: 40%;
+    font-size: 25px;
+    font-family: Candara;
+}
