@@ -59,11 +59,6 @@ function fromSysToSys () {
                         var h = str;
                         str = Math.floor(str);
                         
-                        while (str > 0) {    //запускаем цикл перевода
-                            ans += alph[str % r2];    //остаток от деления записываем в ответ
-                            str = Math.floor(str / r2);    //делим число на нужную систему счисления   
-                        }
-                        
                         if (h != Math.floor(h)){
                                     let f1 =  h - Math.floor(h);
                                     ans += '.';
@@ -72,6 +67,11 @@ function fromSysToSys () {
                                                 ans += Math.floor(f1);
                                                 f1 -= Math.floor(f1); 
                                     }
+                        } 
+                        
+                        while (str > 0) {    //запускаем цикл перевода
+                            ans += alph[str % r2];    //остаток от деления записываем в ответ
+                            str = Math.floor(str / r2);    //делим число на нужную систему счисления   
                         }
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
