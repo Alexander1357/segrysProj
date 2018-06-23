@@ -64,7 +64,10 @@ function fromSysToSys () {
                                     while (Math.floor(f1) != f1 ){
                                                 f1 *= r2;
                                                 ans += Math.floor(f1);
-                                                f1 -= Math.floor(f1); 
+                                                f1 -= Math.floor(f1);
+                                                if (ans.length == 25){
+                                                            f1 = Math.floor(f1);
+                                                }
                                     }
                                     n = ans.split('').reverse().join('');
                                     ans = n;
