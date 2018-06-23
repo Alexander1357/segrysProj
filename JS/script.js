@@ -61,12 +61,12 @@ function fromSysToSys () {
                         
                         if (h != Math.floor(h)){
                                     let f1 =  h - Math.floor(h);
-                                    ans += '.';
                                     while (Math.floor(f1) != f1 ){
                                                 f1 *= r2;
                                                 ans += Math.floor(f1);
                                                 f1 -= Math.floor(f1); 
                                     }
+                                    ans += '.';
                         } 
                         
                         while (str > 0) {    //запускаем цикл перевода
