@@ -12,6 +12,7 @@ input{
         border-bottom: 2px solid black;
 }
 #h1{
+    font-weight:bold;
     text-align: center;
     border-radius: 10px;
     background-color: #8dd8dc;
