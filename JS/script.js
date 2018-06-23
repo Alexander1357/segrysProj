@@ -57,6 +57,7 @@ function fromSysToSys () {
                         //Перевод из десятичной системы счисления в нужную
                         
                         var h = str;
+                        str = Math.floor(str);
                         
                         while (str > 0) {    //запускаем цикл перевода
                             ans += alph[str % r2];    //остаток от деления записываем в ответ
