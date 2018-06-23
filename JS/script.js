@@ -67,6 +67,7 @@ function fromSysToSys () {
                                                 f1 -= Math.floor(f1); 
                                     }
                                     n = ans.split('').reverse().join('');
+                                    ans = n;
                                     ans += '.';
                         } 
                         
