@@ -3,7 +3,7 @@ function cleanUp () {
             document.getElementById('sys1').value = '';    
             document.getElementById('sys2').value = '';    
             document.getElementById('key').value = '';   
-            document.getElementById('ans').innerHTML = ''; 
+            document.getElementById('ans').innerHTML = ' '; 
 }
 
 
@@ -19,7 +19,7 @@ function fromSysToSys () {
             let str = 0;    //вспомогательная переменная
             let ans = "";    //переменная, в которую будет записан ответ
             let x = 0;
-            document.getElementById('ans').innerHTML = '';    //чистим строку с ответом
+            document.getElementById('ans').innerHTML = ' ';    //чистим строку с ответом
             
             n = input.split('').reverse();    //обЪявляем переменную, в которую записывается массив из цифр исходного числа и переворачивается
             
