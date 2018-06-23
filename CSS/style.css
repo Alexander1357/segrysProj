@@ -15,7 +15,7 @@ input{
     text-align: center;
     display: inline-block;
     width: 50%;
-    border-bottom: 2px black;
+    border-bottom: 2px solid black;
     font-family: Candara;
     font-size: 40px;
 }
