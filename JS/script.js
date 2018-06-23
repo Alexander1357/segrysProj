@@ -80,7 +80,7 @@ function fromSysToSys () {
                         }
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
-                        if (r1 != 0 && r2 != 0 && parseInt(input, 10) != null){
+                        if (r1 != 0 && r2 != 0 && parseInt(input, 10) > 0){
                                     document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
                         }
                         else{
