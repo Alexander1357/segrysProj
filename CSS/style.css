@@ -13,7 +13,6 @@ input{
 }
 #answer{
     text-align: center;
-    display: inline-block;
     width: 100%;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
