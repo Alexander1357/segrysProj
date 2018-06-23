@@ -14,8 +14,9 @@ input{
 #answer{
     text-align: center;
     display: inline-block;
-    width: 50%;
+    width: 100%;
     border-bottom: 2px solid black;
+    border-top: 2px solid black;
     font-family: Candara;
     font-size: 40px;
 }
