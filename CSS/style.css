@@ -1,4 +1,12 @@
         body {background-color: #f9f9f9}
+        p {
+            text-align: left;
+        }
+        h1{
+            text-align: center;
+            font-family: Candara;
+            font-size: 40px;
+        }
         input{
                 outline: none;
                 height: 25px; 
@@ -15,10 +23,6 @@
             text-align: left;
             font-family: Candara;
             font-size: 30px;
-        }
-    
-        .p1 {
-            text-align: left;
         }
         #sys1 {
             width: 45px;
