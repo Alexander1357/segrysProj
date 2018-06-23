@@ -1,5 +1,6 @@
         body {background-color: #FFEB3B}
         input{
+                required;
                 height: 25px; 
                 font-size: 25px;
                 width: 35%;
