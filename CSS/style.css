@@ -11,6 +11,15 @@ input{
         background-color: #ff000000;
         border-bottom: 2px solid black;
 }
+#answer{
+    text-align: center;
+    border-radius: 10px;
+    background-color: #8dd8dc;
+    display: inline-block;
+    width: 100%;
+    font-family: Candara;
+    font-size: 40px;
+}
 #h1{
     text-align: center;
     border-radius: 10px;
