@@ -16,7 +16,7 @@ function fromSysToSys () {
             const r1 = +document.getElementById('sys1').value;    //исходной система счисления
             const r2 = +document.getElementById('sys2').value;    //система счисления, в которую надо перевести число
             let input = document.getElementById('key').value;    //исходное число
-            let str = 0.0f;    //вспомогательная переменная
+            let str = 0;    //вспомогательная переменная
             let ans = "";    //переменная, в которую будет записан ответ
             let x;
             document.getElementById('ans').innerHTML = '';    //чистим строку с ответом
