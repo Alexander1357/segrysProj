@@ -65,7 +65,7 @@ function fromSysToSys () {
                                                 f1 *= r2;
                                                 ans += Math.floor(f1);
                                                 f1 -= Math.floor(f1);
-                                                if (ans.length == 25){
+                                                if (ans.length == 15){
                                                             f1 = Math.floor(f1);
                                                 }
                                     }
