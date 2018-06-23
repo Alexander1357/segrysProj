@@ -26,7 +26,7 @@ function fromSysToSys () {
             for (let i = 0; i < n.length; i++){    //прогоняем массив через два цикла, чтобы заменить буквы на цифры
                         for (let j = 0; j < alph.length; j++){
                                     if (n[i] == '.'){
-                                                x = i * -1;
+                                                x = -i;
                                                 n.splice(i, 1);
                                     }
                                     if (n[i] == alph[j]){    //запускается проверка, в которой в исходном числе строки меняются на числа
@@ -56,9 +56,21 @@ function fromSysToSys () {
                         
                         //Перевод из десятичной системы счисления в нужную
                         
+                        var h = str;
+                        
                         while (str > 0) {    //запускаем цикл перевода
                             ans += alph[str % r2];    //остаток от деления записываем в ответ
                             str = Math.floor(str / r2);    //делим число на нужную систему счисления   
+                        }
+                        
+                        if (h != Math.floor(h)){
+                                    let fl =  h - Math.floor(h);
+                                    ans += '.';
+                                    while (Math.floor(f1) != r2){
+                                                f1 *= r2;
+                                                ans += Math.floor(f1);
+                                                f1 -= Math.floor(f1); 
+                                    }
                         }
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
