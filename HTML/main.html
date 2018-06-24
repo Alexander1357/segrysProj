@@ -13,8 +13,8 @@
     </div>
     <div style = "margin-top: 25px; text-align: center">
         <div class = "pan">
-            <p class = "p1">Число: <input id="key" type="text" required pattern="^[A-Z0-9]+$"/></p>
-            <p class = "p1">Его система счисления: 
+            <p>Число: <input id="key" type="text" required pattern="^[A-Z0-9]+$"/></p>
+            <p>Его система счисления: 
                 <select id="sys1">
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -52,7 +52,7 @@
                     <option value="35">35</option>
                     <option value="36">36</option>
                 </select></p>
-            <p class = "p1">Перевести в: 
+            <p>Перевести в: 
                 <select id="sys2">
                     <option value="2" selected="">2</option>
                     <option value="3">3</option>
@@ -93,7 +93,7 @@
             <button id="send" onclick="fromSysToSys()">Перевести</button>
             <button id="send" onclick="cleanUp()">Отчистить</button>
             </div>
-            <div id = "answer">
+            <div id = "output">
                 <p id="ans"></p>
             </div>
         </div>
