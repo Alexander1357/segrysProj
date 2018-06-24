@@ -1,21 +1,21 @@
 body {background-color: #f9f9f9}    /*Стиль body*/
-input{
-        outline: none;
-        height: 25px; 
-        font-size: 25px;
-        width: 35%;
-        border: 0px;
-        background-color: #ff000000;
+input{    /*Стиль поля ввода*/
+        outline: none;    /*убираем обводку*/
+        height: 25px;     /*высота 25 пикселей*/
+        font-size: 25px;    /*размер символов 25 пикселей*/
+        width: 35%;    /*ширина 35%*/
+        border: 0px;    /*без границ*/
+        background-color: none;    /*делаем поле прозрачным (цвет прозрачный)*/
         border-bottom: 2px solid black;
 }
-select {
+select {    /*Стиль body*/
     outline: none;
     border: 1px;
     font-size: 23px;
     -webkit-appearance: none;
     background-color: #ffffff00;
 }
-#output{
+#output{    /*Стиль body*/
     text-align: center;
     width: 100%;
     height: 125px;
@@ -24,7 +24,7 @@ select {
     font-family: Candara;
     font-size: 40px;
 }
-#h1{
+#h1{    /*Стиль body*/
     text-align: center;
     border-radius: 10px;
     background-color: #8dd8dc;
