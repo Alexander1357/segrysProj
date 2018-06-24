@@ -1,7 +1,5 @@
 function cleanUp () {
             
-            document.getElementById('sys1').value = '';    
-            document.getElementById('sys2').value = '';    
             document.getElementById('key').value = '';   
             document.getElementById('ans').innerHTML = ''; 
 }
