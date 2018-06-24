@@ -1,7 +1,4 @@
-body {background-color: #f9f9f9}
-.p1 {
-    text-align: left;
-}
+body {background-color: #f9f9f9}    /*Стиль body*/
 input{
         outline: none;
         height: 25px; 
@@ -18,7 +15,7 @@ select {
     -webkit-appearance: none;
     background-color: #ffffff00;
 }
-#answer{
+#output{
     text-align: center;
     width: 100%;
     height: 125px;
@@ -43,12 +40,6 @@ select {
     text-align: left;
     font-family: Candara;
     font-size: 30px;
-}
-#sys1 {
-    width: 45px;
-}
-#sys2 {
-    width: 45px;
 }
 #ans {
         font-family: Consolas;
