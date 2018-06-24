@@ -12,14 +12,10 @@ input{
         border-bottom: 2px solid black;
 }
 select {
-    border: 0px solid #fff0;
-    cursor: pointer;
-    border-radius: 1px;
-    outline: none;
-    display: inline-block;
-    background: #fff0;
-    font-size: 20px;
-    overflow: hidden;
+    border: 1px;
+    font-size: 25px;
+    -webkit-appearance: none;
+    background-color: #ffffff00;
 }
 #answer{
     text-align: center;
