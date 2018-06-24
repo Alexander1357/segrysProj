@@ -20,6 +20,7 @@ button{    /*Стиль кнопок*/
     width: 40%;
     font-size: 25px;
     font-family: Candara;
+    background-color: #ffffff00;
 }
 .pan {    /*Стиль блока div для ввода*/
     width: 425px;
