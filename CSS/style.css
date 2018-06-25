@@ -46,7 +46,7 @@ button{    /*Стиль кнопок*/
     display: inline-block;
     width: 100%;
     font-family: Candara;
-    font-size: 40px;
+    font-size: 35px;
 }
 .des{    /*Стиль описания сайта*/
         font-size: 25px; 
