@@ -31,6 +31,7 @@ button{    /*Стиль кнопок*/
 }
 .output{    /*Стиль блока div для вывода*/
     text-align: center;
+    margin-top: -20px;
     width: 100%;
     height: 125px;
     border-bottom: 2px solid black;
