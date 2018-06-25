@@ -24,7 +24,7 @@ button{    /*Стиль кнопок*/
 .pan {    /*Стиль блока div для ввода*/
     width: 425px;
     display: inline-block;
-    height: 350px;
+    height: 325px;
     text-align: left;
     font-family: Candara;
     font-size: 30px;
