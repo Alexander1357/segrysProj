@@ -31,13 +31,15 @@ function fromSysToSys () {
                                                 n[i] = j;    //меняем 
                                                 n[i] = parseInt(n[i], 10);
                                     }
-                                    if (n[i] == ' ' || n.length < 1){
+                                    if (n[i] == ' '){
                                                 str = -1;
                                     }
                         }
             }
             
-            
+            if (n.length < 1){
+                        str = -1;
+            }
             
             for(let i = 0; i < n.length; i++){    //прогоняем результат через цикл, чтобы проверить правильность ввода
                         if(n[i] >= r1 || n.length > 25 || isNaN(n[i])){    //проверяем правильность ввода данных
