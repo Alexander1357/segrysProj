@@ -31,7 +31,7 @@ function fromSysToSys () {
                                                 n[i] = j;    //меняем 
                                                 n[i] = parseInt(n[i], 10);
                                     }
-                                    if (n[i] == '' || parseInt(n[i]) == 0){
+                                    if (n[i] == ' ' || n[i] == null){
                                                 str = -1;
                                     }
                         }
