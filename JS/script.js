@@ -30,7 +30,6 @@ function fromSysToSys () {
                                     if (n[i] == alph[j]){    //запускается проверка, в которой в исходном числе строки меняются на числа
                                                 n[i] = j;    //меняем 
                                                 n[i] = parseInt(n[i], 10);
-                                                j = alph.length + 1;
                                     }
                         }
             }
@@ -72,18 +71,13 @@ function fromSysToSys () {
                         
                         str = Math.floor(str);    //переводим целую часть
                         
-                        while (str > 0) {    //запускаем цикл перевода
+                        while (str > 0) {    //запускаем цикл перевода  
                             ans += alph[str % r2];    //остаток от деления записываем в ответ
                             str = Math.floor(str / r2);    //делим число на нужную систему счисления   
                         }
                         
                         //вывод ответа в виде ИСХОДНОЕ ЧИСЛО исходная с.с. = РЕЗУЛЬТАТ нужная с.с.
-                        if (parseInt(input, 10) > 0){    //если поле с исходным числом заполнено, то выводим ответ
-                                    document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
-                        }
-                        else{    //иначе выводим сообщение об ошибке
-                                    document.getElementById('ans').innerHTML += 'Обязательное поле не заполнено!';
-                        }
+                        document.getElementById('ans').innerHTML += `${input}<sub>${String(r1)}</sub> = ${ans.split('').reverse().join('')}<sub>${String(r2)}</sub>`;
             }
             else {    //если массив не прошёл проверку, выводим сообщение об ошибке
                         document.getElementById('ans').innerHTML += 'Проверьте правильность введённых данных!';
